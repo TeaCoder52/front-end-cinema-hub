@@ -1,0 +1,43 @@
+.wrapper {
+	@apply mx-auto px-16 pt-8 text-center;
+
+	> .heading {
+		@apply mt-2 text-5xl font-bold tracking-tight;
+	}
+
+	> .description {
+		@apply mx-auto max-w-2xl mt-6 text-lg text-white/80;
+	}
+
+	> .card_wrapper {
+		@apply mt-8 flex items-center justify-center max-w-md mx-auto;
+
+		> .plan {
+			@apply flex flex-col gap-y-4 bg-gray-800 p-6 shadow-lg rounded-lg w-full relative;
+
+			> .heading {
+				@apply text-4xl font-semibold tracking-tight;
+			}
+
+			> .features {
+				@apply pt-2 space-y-4 text-[15px] leading-6 text-white/70 text-left;
+
+				> .feature {
+					@apply flex gap-x-3;
+
+					> .icon {
+						@apply size-5 flex-none fill-primary;
+					}
+				}
+			}
+
+			> .button {
+				@apply mt-4 w-full mx-auto;
+
+				> .loader {
+					@apply size-5 animate-spin;
+				}
+			}
+		}
+	}
+}

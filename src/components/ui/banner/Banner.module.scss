@@ -1,0 +1,11 @@
+@import '../../../assets/styles/variables';
+
+.banner {
+	@apply relative overflow-hidden w-full h-80 shadow-lg flex flex-col justify-end;
+
+	@include fade-bg-gradient();
+
+	> .image {
+		@apply object-cover object-center;
+	}
+}

@@ -1,0 +1,15 @@
+.subscribe {
+	@apply w-full rounded-lg bg-gray-800 p-4;
+
+	> h2 {
+		@apply font-semibold mb-2;
+	}
+
+	> p {
+		@apply text-sm text-neutral-300 mb-3;
+	}
+
+	.button {
+		@apply w-full;
+	}
+}

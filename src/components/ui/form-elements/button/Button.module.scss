@@ -1,0 +1,11 @@
+.button {
+	@apply inline-flex items-center justify-center transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 py-2;
+}
+
+.default {
+	@apply bg-primary hover:bg-primary/85;
+}
+
+.outline {
+	@apply border border-gray-600;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+	@apply flex items-center gap-x-2 ml-auto;
+
+	> .loader {
+		@apply size-6 text-slate-400 animate-spin;
+	}
+
+	> .menu {
+		@apply flex items-center justify-end gap-x-8;
+
+		.icon {
+			@apply size-7 hover:text-primary transition-all;
+		}
+
+		.avatar {
+			@apply rounded-full;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.loading {
+	@apply space-y-4 mt-4;
+}
+
+.item {
+	@apply flex items-center justify-between bg-gray-700/20 mt-4 px-5 rounded-md transition-colors hover:bg-gray-700/50;
+
+	> div {
+		@apply text-white py-3;
+		width: 24%;
+
+		&:last-child {
+			@apply text-right justify-end;
+		}
+	}
+}
+
+.item_header {
+	@apply bg-primary/60 shadow-lg mt-8 hover:bg-primary/60;
+
+	> div {
+		@apply font-medium py-2.5;
+	}
+}
+
+.not_found {
+	@apply mt-2 text-white text-center py-3;
+}

@@ -1,0 +1,26 @@
+@mixin fade-bg-gradient($direction: 90deg) {
+	&::before {
+		@apply w-full h-full absolute top-0 left-0 z-10;
+		content: '';
+
+		background: linear-gradient(
+			$direction,
+			#100f12 3.31%,
+			rgba(#100f12, 0.99) 7.71%,
+			rgba(#100f12, 0.96) 12.11%,
+			rgba(#100f12, 0.91) 16.51%,
+			rgba(#100f12, 0.85) 20.91%,
+			rgba(#100f12, 0.76) 25.31%,
+			rgba(#100f12, 0.67) 29.71%,
+			rgba(#100f12, 0.55) 34.11%,
+			rgba(#100f12, 0.44) 38.52%,
+			rgba(#100f12, 0.33) 42.92%,
+			rgba(#100f12, 0.23) 47.32%,
+			rgba(#100f12, 0.15) 51.72%,
+			rgba(#100f12, 0.08) 56.12%,
+			rgba(#100f12, 0.03) 60.52%,
+			rgba(#100f12, 0.01) 64.92%,
+			rgba(#100f12, 0) 69.32%
+		);
+	}
+}

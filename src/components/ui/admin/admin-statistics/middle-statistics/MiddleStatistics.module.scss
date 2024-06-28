@@ -1,0 +1,23 @@
+.wrapper {
+	@apply grid grid-cols-4 gap-8 mt-8;
+
+	> .top_movies {
+		@apply col-span-1;
+	}
+
+	> .sales_chart {
+		@apply col-span-3;
+	}
+
+	.tooltip {
+		@apply p-3 bg-gray-900 flex flex-col rounded-lg;
+
+		> .title {
+			@apply text-center;
+		}
+
+		> .value {
+			@apply text-sm mt-2;
+		}
+	}
+}

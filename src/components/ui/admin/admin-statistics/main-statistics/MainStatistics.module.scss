@@ -1,0 +1,19 @@
+.main_statistics {
+	@apply grid grid-cols-4 gap-7 my-5;
+
+	> .item {
+		@apply bg-gray-800 p-4 rounded-lg;
+
+		> .header {
+			@apply flex items-center justify-between space-y-0 pb-2 text-slate-200;
+
+			> .name {
+				@apply font-medium;
+			}
+
+			> .icon {
+				@apply size-[22px];
+			}
+		}
+	}
+}

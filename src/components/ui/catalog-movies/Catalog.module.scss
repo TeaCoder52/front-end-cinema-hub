@@ -1,0 +1,15 @@
+.heading {
+	@apply mb-2;
+}
+
+.movies {
+	@apply grid grid-cols-4 gap-x-8 mt-6;
+
+	> .not_found {
+		@apply text-gray-500;
+	}
+
+	> .loading {
+		@apply w-full h-40 mb-8;
+	}
+}

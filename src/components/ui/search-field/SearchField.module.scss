@@ -1,0 +1,20 @@
+.search {
+	@apply block relative border border-gray-700 rounded-lg;
+
+	input {
+		@apply rounded-lg py-2 px-12 w-full block outline-0 text-white shadow bg-transparent border-none outline-none;
+
+		&::placeholder {
+			color: #7c7a83;
+		}
+
+		&:focus-within {
+			@apply border-gray-600;
+		}
+	}
+
+	> .icon {
+		@apply absolute left-4 top-3;
+		max-width: 18px;
+	}
+}

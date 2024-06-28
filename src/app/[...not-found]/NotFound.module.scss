@@ -1,0 +1,15 @@
+.wrapper {
+	@apply h-[100vh] flex gap-y-4 items-center w-full;
+
+	> .area {
+		@apply flex items-center gap-y-4 flex-col w-full;
+
+		> h1 {
+			@apply text-3xl;
+		}
+
+		> .link {
+			@apply underline-offset-4 hover:underline;
+		}
+	}
+}

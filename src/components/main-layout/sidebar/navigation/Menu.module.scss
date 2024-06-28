@@ -1,0 +1,27 @@
+.menu {
+	@apply mb-4 px-4;
+
+	.heading {
+		@apply text-gray-500 uppercase text-sm font-semibold;
+	}
+
+	> .items {
+		@apply flex flex-col space-y-1.5 py-3;
+
+		> .item {
+			@apply flex w-full items-center gap-x-3 px-3 py-2 rounded-lg transition-all duration-300;
+
+			> .icon {
+				@apply size-[18px];
+			}
+
+			&:hover {
+				@apply bg-primary;
+			}
+		}
+
+		> .active {
+			@apply bg-primary;
+		}
+	}
+}

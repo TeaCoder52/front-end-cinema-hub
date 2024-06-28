@@ -1,0 +1,33 @@
+.leave_form {
+	> .heading {
+		@apply text-center mb-4;
+	}
+
+	.textarea {
+		@apply rounded-md border-none outline-none bg-gray-800 p-3 block mt-4 resize-none w-full text-sm min-h-[110px];
+	}
+
+	.errors {
+		@apply text-red-500 text-sm list-disc pl-4 mt-3;
+	}
+}
+
+.reviews {
+	@apply grid grid-cols-4 gap-10;
+
+	> .review {
+		@apply bg-gray-800 rounded-lg shadow-md p-6;
+
+		> .user {
+			@apply flex items-center mb-2;
+
+			> .avatar {
+				@apply mr-3 block rounded-full;
+			}
+		}
+
+		> .text {
+			@apply text-sm mt-2 leading-relaxed;
+		}
+	}
+}

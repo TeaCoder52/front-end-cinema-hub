@@ -1,0 +1,48 @@
+.wrapper {
+	@apply mt-6 rounded-2xl overflow-hidden shadow-xl relative animate-fade;
+
+	> .loading {
+		@apply w-full h-full flex justify-center items-center bg-gray-800;
+	}
+
+	.controls {
+		@apply flex items-center justify-between absolute bottom-3 left-6 right-6;
+
+		> div:first-child {
+			@apply flex items-center justify-between;
+
+			> button {
+				@apply text-2xl text-white mr-3 outline-none opacity-60 hover:opacity-100 transition-opacity;
+			}
+
+			.play_button {
+				@apply text-4xl;
+			}
+
+			.time_controls {
+				@apply flex items-center text-white ml-4 opacity-60;
+
+				> p:nth-child(2) {
+					@apply mx-2;
+				}
+			}
+		}
+
+		> div:last-child {
+			@apply flex items-center;
+
+			> button {
+				@apply text-white text-3xl outline-none opacity-60 hover:opacity-100 transition-opacity;
+			}
+		}
+	}
+
+	.progress_bar_container {
+		@apply absolute left-4 right-4 bottom-14 bg-gray-600 rounded-lg h-1;
+		width: calc(100% - 2rem);
+
+		.progress_bar {
+			@apply rounded-2xl h-full bg-primary;
+		}
+	}
+}

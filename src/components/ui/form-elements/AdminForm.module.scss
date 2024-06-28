@@ -1,0 +1,15 @@
+.form {
+	@apply mt-7;
+
+	.fields {
+		@apply flex items-center gap-y-5 flex-wrap justify-between;
+
+		> div {
+			width: 48%;
+		}
+	}
+
+	> button {
+		@apply mt-5;
+	}
+}

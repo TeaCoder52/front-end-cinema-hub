@@ -1,0 +1,13 @@
+.select_container {
+	@apply relative mb-8 animate-fade;
+
+	> label {
+		> span {
+			@apply text-[13px] font-medium text-gray-600 uppercase block mb-1;
+		}
+	}
+
+	.error {
+		@apply text-red-500 font-medium text-sm mb-2;
+	}
+}

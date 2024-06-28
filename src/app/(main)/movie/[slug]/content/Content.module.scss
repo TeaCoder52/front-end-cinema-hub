@@ -1,0 +1,23 @@
+.content {
+	@apply relative z-20 p-8;
+
+	> h1 {
+		@apply text-white uppercase text-5xl mb-1;
+	}
+
+	.rating {
+		@apply absolute bottom-8 right-8 flex items-center opacity-90;
+
+		> svg {
+			@apply fill-yellow-500 mb-0.5 size-6;
+		}
+
+		> span {
+			@apply text-white ml-2 text-lg;
+		}
+	}
+
+	.details {
+		@apply text-white/80 my-3;
+	}
+}

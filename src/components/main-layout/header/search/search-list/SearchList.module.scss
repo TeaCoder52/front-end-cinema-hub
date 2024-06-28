@@ -1,0 +1,12 @@
+.list {
+	@apply grid grid-cols-5 absolute border border-gray-700 rounded-lg bg-gray-800 w-full animate-fade z-10;
+	top: calc(100% + 15px);
+
+	> .item {
+		@apply flex items-center py-3 px-4 relative;
+	}
+}
+
+.notFound {
+	@apply text-white my-4;
+}

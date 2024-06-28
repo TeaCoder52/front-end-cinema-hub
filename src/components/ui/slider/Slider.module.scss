@@ -1,0 +1,31 @@
+@import '../../../assets/styles/variables';
+
+.slider {
+	@apply relative;
+
+	.slide {
+		@apply relative h-[350px] overflow-hidden shadow-xl flex items-center;
+
+		@include fade-bg-gradient();
+
+		.image {
+			@apply object-center object-cover;
+		}
+
+		.content {
+			@apply relative z-20 px-14;
+
+			.title {
+				@apply text-white uppercase text-5xl font-semibold leading-[60px] mb-2;
+			}
+
+			.sub_title {
+				@apply text-neutral-300 font-medium uppercase mb-4;
+			}
+
+			.button {
+				@apply px-10;
+			}
+		}
+	}
+}

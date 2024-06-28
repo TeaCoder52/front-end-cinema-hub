@@ -1,0 +1,15 @@
+.wrapper {
+	@apply flex flex-col items-center h-[70vh] justify-center space-y-8;
+
+	> .heading {
+		@apply text-4xl;
+	}
+
+	> .avatar {
+		@apply flex items-center;
+	}
+
+	> .button {
+		@apply w-28;
+	}
+}

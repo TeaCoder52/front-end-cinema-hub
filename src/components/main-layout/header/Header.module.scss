@@ -1,0 +1,7 @@
+.wrapper {
+	@apply pl-72 h-[70px] fixed inset-y-0 w-full z-[50];
+
+	> .header {
+		@apply p-6 gap-x-4 h-full flex items-center bg-gray-900;
+	}
+}

@@ -1,0 +1,11 @@
+.top_movies {
+	@apply rounded-lg bg-gray-800 p-4;
+
+	ul {
+		@apply flex-col space-y-3 mt-6;
+
+		> li {
+			@apply text-sm line-clamp-1;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.overlay {
+	@apply fixed top-0 bottom-0 left-0 right-0 flex justify-center items-center z-[1000] animate-fade;
+
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.window {
+	@apply bg-gray-900 p-5 rounded-lg w-[80%] relative max-w-lg duration-500;
+	animation-name: slideIn;
+	animation-duration: 0.5s;
+
+	> button {
+		@apply absolute top-5 right-5 text-xl transition-colors;
+
+		&:hover {
+			@apply text-primary;
+		}
+	}
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateY(-50%) scale(0.1);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0) scale(1);
+		opacity: 1;
+	}
+}
